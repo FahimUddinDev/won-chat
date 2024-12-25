@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.no-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scroll-bar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* height calculate  */
+.screen-height-cal {
+  height: calc(100vh);
+}
+
+@media (min-width: 1024px) {
+  .screen-height-cal {
+    height: calc(100vh - 24px);
+  }
+}
+
+/* quill  */
+.ql-header {
+  width: 44px !important;
+}
+
+.ql-toolbar.ql-snow {
+  border: 1px solid #f1f5f9 !important;
+}
+.ql-toolbar.ql-snow {
+  border-left: 0px !important;
+  border-right: 0px !important;
+}
+.ql-container.ql-snow {
+  border: 0px solid #f1f5f9 !important;
+}
+
+.ql-toolbar .ql-stroke {
+  fill: none !important;
+  stroke: #334155 !important;
+}
+
+.ql-toolbar .ql-fill {
+  fill: #334155 !important;
+  stroke: none !important;
+}
+
+.ql-toolbar .ql-picker {
+  color: #334155 !important;
+}
+
+.ql-toolbar:hover .ql-stroke {
+  fill: none !important;
+  stroke: #000929 !important;
+}
+
+.ql-toolbar:hover .ql-fill {
+  fill: #000929 !important;
+  stroke: none !important;
+}
+
+.ql-toolbar:hover .ql-picker {
+  color: #000929;
+}
+
+/* messages  */
+.msg-body {
+  font-size: 14px !important;
+  color: #334155 !important;
+  margin: 20px 0px;
+  padding-right: 20px;
+  display: flex;
+  align-items: end;
+  gap: 20px;
+}
+.msg-body a {
+  color: #22c55e !important;
+}
+
+.msg-files {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: end;
+  margin: 20px 0px;
+}
+.msg-file {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  background: #f8fafc;
+  padding: 8px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 234px;
+}
+
+.msg-file > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.msg-file > div > div:first-child {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.msg-file > div > div > h1 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000929;
+}
+.msg-file > div > div > p {
+  font-size: 12px;
+  color: #334155;
+  margin-top: 4px;
+}
+
+.msg-body-r {
+  padding-left: 20px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 12px;
+  margin: 20px 0px;
+}
+
+.msg-body-r > data,
+.msg-body-l > data,
+.msg-body > data,
+.msg-files > data,
+.msg-files-r > data {
+  font-size: 12px;
+  color: #cbd5e1;
+  height: fit-content;
+  text-wrap: nowrap;
+}
+
+.msg-body-r > p {
+  background: #22c55e;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: white;
+}
+
+.msg-files-r {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  justify-content: end;
+  margin: 20px 0px;
+  align-items: end;
+}
+
+.msg-body-l p {
+  background: #f9fafb;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #000929;
+}
+.msg-body-l h1 {
+  background: #f9fafb;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #000929;
+  font-weight: 500;
+}
+.msg-body-l span {
+  font-weight: 400;
+  color: #334155;
+}
+.msg-body-l {
+  padding-right: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  gap: 12px;
+  margin: 20px 0px;
+}
+.massage-body-wrapper {
+  height: calc(100vh - 300px);
+}
+
+@media (min-width: 410px) {
+  .massage-body-wrapper {
+    height: calc(100vh - 300px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .massage-body-wrapper {
+    height: calc(100vh - 288px);
+  }
+}
+
+.swiper-pagination-bullet {
+  background: transparent !important;
+  width: 10px !important;
+  height: 10px !important;
+  border: 2px solid #f85606 !important;
+  outline: 2px solid transparent !important;
+  outline-offset: 2px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #f85606 !important;
+  width: 10px !important;
+  height: 10px !important;
+  border: 2px solid #f85606 !important;
+  outline: 2px solid #f85606 !important;
+  outline-offset: 2px !important;
+}
+
+.ql-picker-label::before {
+  content: "A" !important;
+}
+.ql-picker-item::before {
+  content: "A" !important;
+}
+
+.ql-container {
+  height: 100px !important;
+  overflow-y: auto;
+}
